@@ -1,0 +1,1789 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<!-- P1 -->
+
+<title>Local Area Unemployment Statistics Home Page</title>
+<!-- ****************************************** Begin META TAGS ********************************************* -->
+	<!-- START include/global/head.stm -->
+	<script id="_fed_an_ua_tag" src="https://dap.digitalgov.gov/Universal-Federated-Analytics-Min.js?agency=DOL&subagency=BLS&yt=true"></script>
+	<script src="/javascripts/jquery-latest.js"></script>
+	<script src="/javascripts/bls-latest.js"></script>
+	<script src="/javascripts/jquery-tools.js"></script>
+	<script src="/javascripts/jquery-migrate-1.2.1.min.js"></script>
+	
+	<link rel="stylesheet" href="/assets/bootstrap/latest/bootstrap.min.css">
+	<script src="/assets/bootstrap/latest/popper.min.js"></script>
+	<script src="/assets/bootstrap/latest/bootstrap.min.js"></script>
+
+
+	<link rel="stylesheet" type="text/css" href="/stylesheets/bls_combined.css">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/bls_content.css">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/bls_tables.css">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/jquery-tools.css">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/bls_nr.css">
+    <!--[if lt IE 9]>
+		<link href="/stylesheets/ie8-styles.css" media="all" rel="Stylesheet" type="text/css"> 
+	<![endif]-->
+	<!--[if lt IE 8]>
+		<link href="/stylesheets/ie7-styles.css" media="all" rel="Stylesheet" type="text/css"> 
+	<![endif]-->
+	<!--[if lt IE 7]>
+		<link href="/stylesheets/ie6-styles.css" media="all" rel="Stylesheet" type="text/css"> 
+		<style>
+		body {
+			behavior:url(/stylesheets/csshover2.htc);
+		}
+		</style>			
+	<![endif]-->
+	<!--[if IE]>
+		<style>
+		body {
+			font-size: expression(1 / (screen.deviceXDPI / 96) * 84 + '%');
+		}
+		</style>	
+	<![endif]-->
+	<noscript>
+	<link rel="stylesheet" type="text/css" href="/stylesheets/bls_noscript.css">
+	</noscript>
+	<!--  This means that the browser will (probably) render the width of the page at the width of its own screen. -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta http-equiv="x-ua-compatible" content="IE=Edge" />
+    <meta property="og:image" content="https://www.bls.gov/images/bls_emblem.png" />
+		<style>
+			td.gsc-table-cell-thumbnail{
+			display:none !important;
+			}
+		</style>
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+	<link rel="manifest" href="/manifest.json" />
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+	<meta name="theme-color" content="#ffffff" />
+    <!-- END include/global/head.stm -->
+
+	<meta name="agency" content="BLS" />
+	<meta name="audience" content="general" />
+<meta name="subagency" content="BLS: Employment and Unemployment">
+<meta name="program" content="BLS: Employment and Unemployment: Local Area Unemployment Statistics">
+<meta name="subject" content="Statistics: By geographical coverage: State, Statistics: By geographical coverage: Sub-state (County/MSA/City), Statistics: Employment and Unemployment">
+<link rel="alternate" type="application/rss+xml" title="Latest Numbers" href="/feed/lau_latest.rss">
+<meta name="date" content="07/19/2008">
+<!-- ****************************************** End META TAGS *********************************************** -->
+</head>
+<body>
+<!-- ****************************************** Begin HEADER ************************************************ -->
+<!-- ThreeColHead Begin -->
+	
+<!--no_index_start-->
+<!-- DOL BANNER BEGIN -->
+<!-- DOL BANNER START -->
+<header aria-label="global-header"> <!-- Header is closed at the end of BLS banner -->
+		<a class="skiplink" href="#startcontent">Skip to Content</a>
+
+		<div id="usa-banner-wrapper">
+<div id="usa-banner" class="bootstrap standard-width">
+	<div class="content">
+	<div class="USA-flag-link">
+	<img src="https://www.dol.gov/themes/opa_theme/img/flag-favicon-57.png" alt="U.S. flag">
+	<p>An official website of the United States government 
+	  
+	<button type="button" data-toggle="collapse" data-target="#usaBanner" aria-expanded="false" aria-controls="usaBanner">Here is how you know <span class="oi" data-glyph="chevron-bottom"></span></button>
+	</p>
+	</div>
+		<a href="https://www.dol.gov/" id="dolHolder" class="dolHolder" target="_blank"><img src="https://www.dol.gov/themes/opa_theme/img/logo-primary.svg" alt="Department of Labor Logo"/>  United States Department of Labor</a>
+	</div>
+	
+	<div class="collapse " id="usaBanner">	
+	<div class="row">
+	<div class="col-md-6">
+		<img src="https://www.dol.gov/themes/opa_theme/img/icon-dot-gov.svg" alt="Dot gov">
+
+		<p>
+			<strong>The .gov means it's official.</strong>
+			<br> Federal government websites often end in .gov or .mil. Before sharing sensitive information,
+			make sure you're on a federal government site.
+		</p>
+	</div>
+
+	<div class="col-md-6">
+	<img class="usa-banner-icon usa-media_block-img" src="https://www.dol.gov/themes/opa_theme/img/icon-https.svg" alt="Https">
+	
+		<p>
+			<strong>The site is secure.</strong>
+			<br> The
+			<strong>https://</strong> ensures that you are connecting to the official website and that any
+			information you provide is encrypted and transmitted securely.
+		</p>
+	</div>
+	</div>
+	</div>		
+</div>
+</div>
+
+
+
+<!-- DOL BANNER END -->
+
+
+<!-- DOL BANNER END -->
+<!-- BLS BANNER BEGIN -->
+<div id="bls-banner-wrapper">
+<div id="top"></div>
+		<div class="bootstrap standard-width">
+<div>
+  <div id="bls-banner" class="row">
+    <div id="bls-banner-emblem" class="col-sm-12 col-md-7">
+      <a href="https://www.bls.gov/">U.S. Bureau of Labor Statistics</a>
+    </div>
+    <div id="bls-banner-right" class="col-sm-12 col-md-5 d-none d-md-block">
+      <div id="bls-banner-links"><span class="social-follow"><a title="Follow BLS on Twitter" target="_blank" href="http://twitter.com/BLS_gov" aria-label="Follow Us on the Bureau of Labor Statistics Twitter">Follow Us</a> </span><span class="social-follow-links"> 
+        <!-- <img src="/images/icons/facebook.png"/>--> 
+        <a target="_blank" href="http://twitter.com/BLS_gov" aria-label="Bureau of Labor Statistics Twitter"><img style="margin-top:-10px;" alt="Follow BLS on Twitter" src="/images/icons/twitter.png"/></a> 
+        <!--<img src="/images/icons/linkedin.png"/>--> 
+        </span> | <a href="/schedule/news_release/">Release Calendar</a> | <a href="https://blogs.bls.gov/blog/" aria-label="Blog page">Blog</a></div>
+      <div id="bls-banner-search1" class="bls-banner-search">
+        <form method="get" action="/search/query">
+		  <label for="bls-banner-search-submit1" class="invisible">Search button</label>
+          <input type="image" src="/images/buttons/search_button_blue_16.png" name="term" id="bls-banner-search-submit1" alt="BLS Search Submit" title="Submit" >
+		  <label for="bls-banner-search-input1" class="invisible">Search:</label>
+          <input name="query" type="text" id="bls-banner-search-input1" value="Search BLS.gov" title="Search Input" onclick="this.value=''; this.onclick = null;">
+
+        </form>
+      </div>
+    </div>
+    <div class="clearfloat"></div>
+  </div>
+</div>
+</div>
+</div>
+</header> <!-- Header is opened at the begining of DOL banner -->
+<!-- BLS BANNER END -->
+<!-- MAIN NAV BEGIN -->
+<div id="main-nav-wrapper">
+	<div id="main-nav-container">
+		<div>
+			<div class="bootstrap standard-width">
+<nav aria-label="top-level navigation menu" class="navbar navbar-expand-md">
+  
+  
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation menu">
+    <span class="navbar-toggler-icon">Menu</span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  
+
+
+<ul class="nojs navbar-nav mr-auto">
+     <li class="dropdownSearch"><div id="bls-banner-search" class="dropdown-search">
+        <form method="get" action="/search/query">
+		  <label for="bls-banner-search-submit" class="invisible">Search button</label>
+          <input type="image" src="/images/buttons/search_button_blue_20.png" name="term" id="bls-banner-search-submit" alt="BLS Search Submit" title="Submit">
+		  <label for="bls-banner-search-input" class="invisible">Search:</label>
+          <input name="query" type="text" id="bls-banner-search-input" value="Search BLS.gov" title="Search Input" onclick="this.value=''; this.onclick = null;">
+
+        </form>
+      </div></li>
+    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="https://www.bls.gov/" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home <span class="circle-arrow"></span></a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown1"><!-- ********************************************** Begin Home Tab LIST ****************************************** -->
+<!-- 1st column -->
+<div class="main-nav-submenu" id="submenu-home">
+	<ul class="main-nav-submenu-inn">
+	
+		<li class="heading"><a href="/bls/infohome.htm" aria-label="About BLS">About BLS</a></li>
+		<li><a href="/bls/history/home.htm" aria-label="BLS History">History</a></li>	
+		<li><a href="/bls/senior_staff/home.htm" aria-label="Our Leadership">Our Leadership</a></li>
+		<li><a href="/bls/bls_budget_and_performance.htm" aria-label="Budget and Performance">Budget and Performance</a></li>		
+		<li><a href="/bls/faqs.htm" aria-label="Questions and Answers">Questions and Answers</a></li>	
+		<li><a href="/bls/topicsaz.htm" aria-label="A-Z Index">A-Z Index</a></li>	
+		<li><a href="/bls/glossary.htm" aria-label="Glossary">Glossary</a></li>	
+		<li><a href="/jobs/" aria-label="Careers at BLS">Careers at BLS </a></li>	
+		<li><a href="/bls/bls-speakers/" aria-label="BLS Speakers Available">BLS Speakers Available</a></li>
+		<li><a href="/errata/" aria-label="Errata">Errata</a></li>  				
+		<li><a href="/bls/contact.htm" aria-label="Contact BLS">Contact BLS</a></li>	
+
+	</ul>	
+	<!-- 2nd column -->	
+<ul class="main-nav-submenu-inn">	
+		<li class="heading"><a href="/bls/overview.htm" aria-label="Overview of BLS Statistics">Overview of BLS Statistics</a></li>
+		<li><a href="/bls/demographics.htm" aria-label="Demographics Data">Demographics</a></li>
+		<li><a href="/bls/industry.htm" aria-label="Statistics by Industries">Industries</a></li>
+		<li><a href="/bls/business.htm" aria-label="Statistics on Business Costs">Business Costs</a></li>
+		<li><a href="/bls/occupation.htm" aria-label="Statistics by Occupations">Occupations</a></li>
+		<li><a href="/bls/geography.htm" aria-label="Statistics by Geography">Geography</a></li>	
+	
+	</ul>
+	<!-- 3rd column -->
+	<ul class="main-nav-submenu-inn">
+		<li class="heading"><a href="/audience/" aria-label="Resources For">Resources For</a></li>
+		<li><a href="/audience/business.htm" aria-label="Resources for Business Leaders">Business Leaders</a></li>
+		<li><a href="/audience/consumers.htm" aria-label="Resources for Consumers">Consumers</a></li>
+		<li><a href="/audience/developers.htm" aria-label="Developers site">Developers</a></li>
+		<li><a href="/audience/economists.htm" aria-label="Economists or Economic Analyst">Economists</a></li>
+		<li><a href="/audience/investors.htm" aria-label="Resources for Financial Investors">Investors</a></li>
+		<li><a href="/audience/jobseekers.htm" aria-label="Resources for Jobseekers">Jobseekers</a></li>
+		<li><a href="/audience/media.htm" aria-label="Media">Media</a></li>
+		<li><a href="/audience/policy.htm" aria-label="Resources for Public Policymakers">Public Policymakers</a></li>
+		<li><a href="/audience/researcher.htm" aria-label="Researcher">Researcher</a></li>		
+		<li><a href="/audience/students.htm" aria-label="Resources for Students & Teachers">Students &amp; Teachers</a></li>
+		<li><a href="/respondents/" aria-label="Survey Respondents">Survey Respondents</a></li>
+	</ul>
+</div>
+
+<!-- ***********************************************End Home Tab LIST ******************************************** --> 
+
+</div>
+    </li>
+    <li class="nav-item dropdown active"><a class="nav-link dropdown-toggle" href="/bls/proghome.htm" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Subjects <span class="circle-arrow"></span></a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown2"><!-- ************************************* Begin SUBJECTS TAB list ****************************************** -->
+<!-- 1st column -->
+<div class="main-nav-submenu" id="submenu-programs">
+	<ul class="main-nav-submenu-inn">
+		<li class="heading"><a href="/bls/inflation.htm" aria-label="Statistics on Inflation & Prices">Inflation &amp; Prices</a></li>
+		<li><a href="/cpi/" aria-label="Consumer Price Index ">Consumer Price Index</a></li>
+		<li><a href="/ppi/" aria-label="Producer Price Indexes">Producer Price Indexes</a></li>
+		<li><a href="/mxp/" aria-label="Import/Export Price Indexes">Import/Export Price Indexes</a></li>
+		<li><a href="/bls/escalation.htm" aria-label="Contract Escalation">Contract Escalation</a></li>
+		<li><a href="/pir/" aria-label="Price Index Research">Price Index Research</a></li>
+		<li class="heading"><a href="/bls/wages.htm" aria-label="Statistics on Pay & Benefits">Pay &amp; Benefits</a></li>
+		<li><a href="/ncs/ect/" aria-label="Employment Costs Trends">Employment Costs</a></li>
+		<li><a href="/ncs/" aria-label="National Compensation Data">National Compensation Data</a></li>
+		<li><a href="/oes/" aria-label="Wage Data by Occupation">Wage Data by Occupation</a></li>
+		<li><a href="/cps/earnings.htm#demographics" aria-label="Earnings by Demographics">Earnings by Demographics</a></li>
+		<li><a href="/ces/" aria-label="Earnings by Industry">Earnings by Industry</a></li>
+		<li><a href="https://www.bls.gov/cew/" aria-label="County Wages">County Wages</a></li>  <!--full path is needed since they have a folder on the data server-->
+		<li><a href="/ncs/ebs/" aria-label="Employee Benefits Survey">Benefits</a></li>
+		<li><a href="/crp/" aria-label="Compensation Research & Program Development">Compensation Research</a></li>
+		<li><a href="/wsp/" aria-label="Strikes & Lockouts">Strikes &amp; Lockouts </a></li>
+		<li class="heading"><a href="/bls/spending.htm" aria-label="Statistics on Spending & Time Use">Spending &amp; Time Use</a></li>
+		<li><a href="/cex/" aria-label="Consumer Expenditures Surveys">Consumer Expenditures </a></li>
+		<li><a href="/tus/" aria-label="How Americans Spend Time Survey">How Americans Spend Time</a></li>
+	</ul>
+	<!-- 2nd column -->
+	<ul class="main-nav-submenu-inn">
+		<li class="heading"><a href="/bls/unemployment.htm" aria-label="Statistics on Unemployment">Unemployment</a></li>
+		<li><a href="/cps/" aria-label="National Unemployment Rate">National Unemployment Rate </a></li>
+		<li><a href="/lau/" aria-label="State & Local Unemployment Rates">State &amp; Local Unemployment Rates </a></li>
+		<li><a href="/ers/" aria-label="Unemployment Research">Unemployment Research</a></li>
+		<li class="heading"><a href="/bls/employment.htm" aria-label="Statistics on Employment">Employment</a></li>
+		<li><a href="/ces/" aria-label="National Employment Statistics">National Employment </a></li>
+		<li><a href="/sae/" aria-label="State & Local Employment, Hours, and Earnings">State &amp; Local Employment </a></li>
+		<li><a href="https://www.bls.gov/cew/" aria-label="County Employment">County Employment </a></li> <!--full path is needed since they have a folder on the data server-->
+		<li><a href="/cps/" aria-label="Worker Characteristics">Worker Characteristics </a></li>
+		<li><a href="/air/" aria-label="American Indian Report">American Indian Report</a></li>
+		<li><a href="/emp/" aria-label="Employment Projections">Employment Projections </a></li>
+		<li><a href="/jlt/" aria-label="Job Openings & Labor Turnover Survey">Job Openings &amp; Labor Turnover Survey </a></li>
+		<li><a href="/brs/" aria-label="COVID-19 Business Response">COVID-19 Business Response</a></li>
+		<li><a href="/oes/" aria-label="Employment by Occupation">Employment by Occupation </a></li>
+		<li><a href="/nls/" aria-label="Work Experience Over Time">Work Experience Over Time </a></li>
+		<li><a href="/bdm/" aria-label="Business Employment Dynamics">Business Employment Dynamics </a></li>
+		<li><a href="/fdi/" aria-label="Foreign Direct Investment">Foreign Direct Investment </a></li>
+		<li><a href="/ers/" aria-label="Employment Research and Program Development">Employment Research</a></li>
+		<li class="heading"><a href="/iif/" aria-label="Workplace Injuries, Illnesses, and Fatalities">Workplace Injuries</a></li>
+		<li class="heading"><a href="/ors/" aria-label="Occupational Requirements Survey">Occupational Requirements</a></li>
+	</ul>
+	<!-- 3rd column -->
+	<ul class="main-nav-submenu-inn">
+		<li class="heading"><a href="/bls/productivity.htm" aria-label="Productivity Statistics">Productivity</a></li>
+		<li><a href="/productivity/" aria-label="Labor and Total Factor Productivity">Labor and Total Factor Productivity</a></li>
+		<li><a href="/dpr/" aria-label="Productivity Research and Program Development">Productivity Research</a></li>
+		<li class="heading"><a href="/bls/international.htm" aria-label="International Data and Technical Cooperation">International</a></li>
+		<li><a href="/itc/" aria-label="International Technical Cooperation">International Technical Cooperation</a></li>
+		<li><a href="/mxp/" aria-label="Import/Export Price Indexes">Import/Export Price Indexes</a></li>
+		<li></li>
+		<li class="heading"><a href="/regions/" aria-label="Geographic Information">Geographic Information</a></li>
+		<li><a href="/regions/new-england/" aria-label="New England (Boston) Information Office">New England (Boston)</a></li>
+		<li><a href="/regions/new-york-new-jersey/" aria-label="New York-New Jersey (NY City) Information Office">New York-New Jersey (NY City)</a></li>
+		<li><a href="/regions/mid-atlantic/" aria-label="Mid-Atlantic (Philadelphia) Information Office">Mid-Atlantic (Philadelphia)</a></li>
+		<li><a href="/regions/southeast/" aria-label="Southeast (Atlanta) Information Office">Southeast (Atlanta)</a></li>
+		<li><a href="/regions/midwest/" aria-label="Midwest (Chicago) Information Office">Midwest (Chicago)</a></li>
+		<li><a href="/regions/southwest/" aria-label="Southwest (Dallas) Information Office">Southwest (Dallas)</a></li>
+		<li><a href="/regions/mountain-plains/" aria-label="Mountain-Plains (Kansas City) Information Office">Mountain-Plains (Kansas City)</a></li>
+		<li><a href="/regions/west/" aria-label="West (San Francisco) Information Office">West (San Francisco)</a></li>
+	</ul>
+</div>
+<!-- **************************************End SUBJECT AREAS ******************************************** --> 
+	</div>	
+    </li>
+    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/data/" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Data Tools <span class="circle-arrow"></span></a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown3"><!-- ******************************************** Begin DATA TOOLS LIST ****************************************** -->
+<div class="main-nav-submenu"  id="submenu-data">
+    <ul class="main-nav-submenu-inn">
+        <li class="heading"><a href="/data/tools.htm" aria-label="Data Retrieval Tools Databases, Tables & Calculators by Subject">Data Retrieval Tools</a></li>
+		<li><a href="https://data.bls.gov/cgi-bin/surveymost?bls" aria-label="BLS Popular Series Top Picks">BLS Popular Series</a></li>
+		<li><a href="https://data.bls.gov/cgi-bin/srgate" aria-label="Series Report">Series Report</a></li>
+		<li><a href="/data/home.htm" aria-label="Top Picks, One Screen, Multi-Screen, and Maps" >Top Picks, One Screen, Multi-Screen, and Maps</a></li>
+		<li><a href="https://beta.bls.gov/dataQuery/search" aria-label="Data Finder">Data Finder</a></li>
+		<li><a href="/developers/home.htm" aria-label="Public Data API Programming Interface">Public Data API</a></li>
+
+    </ul>
+    <!-- 2nd column -->
+    <ul class="main-nav-submenu-inn">
+        <li class="heading"><a href="/data/apps.htm" aria-label="Charts and Applications">Charts and Applications</a></li>
+		<li><a href="/charts/home.htm" aria-label="Charts for Economic News Releases">Charts for Economic News Releases</a></li>	
+		<li><a href="/data/inflation_calculator.htm" aria-label="CPI Inflation Calculator">CPI Inflation Calculator</a></li>	
+		<li><a href="https://data.bls.gov/iirc/" aria-label="Injury and Illness Calculator">Injury and Illness Calculator</a></li>		
+		<li><a href="https://data.bls.gov/apps/compensation-comparison-matrix/home.htm" aria-label="Pay Measure Comparison">Pay Measure Comparison</a></li>
+		<li><a href="https://data.bls.gov/apps/demographic-comparison-matrix/home.htm" aria-label="Demographic Data Sources">Demographic Data Sources</a></li>
+		<li><a href="https://data.bls.gov/apps/covid-dashboard/home.htm" aria-label="COVID-19 Economic Trends">COVID-19 Economic Trends</a></li>
+		<li><a href="https://data.bls.gov/apps/industry-productivity-viewer/home.htm" aria-label="Industry Productivity Viewer" >Industry Productivity Viewer</a></li>
+		<li><a href="https://data.bls.gov/cew/apps/data_views/data_views.htm#tab=Tables" aria-label="Employment and Wages Data Viewer">Employment and Wages Data Viewer</a></li>
+		<li><a href="https://data.bls.gov/cew/apps/bls_naics/bls_naics_app.htm" aria-label="Industry Finder from the Quarterly Census of Employment and Wages">Industry Finder from the Quarterly Census of Employment and Wages</a></li>
+	
+    </ul>
+	<!-- 3rd column -->
+	<ul class="main-nav-submenu-inn">
+	    <li class="heading"><a href="/data/tables.htm" aria-label="Customized Tables">Customized Tables</a></li>
+		<li><a href="/eag/eag.us.htm" aria-label="U.S. Economy at a Glance">U.S. Economy at a Glance</a></li>
+		<li><a href="/eag/home.htm" aria-label="Regions, States & Areas at a Glance">Regions, States &amp; Areas at a Glance</a></li>
+		<li><a href="/iag/home.htm" aria-label="Industry at a Glance">Industry at a Glance</a></li>			
+		<li><a href="https://download.bls.gov/pub/time.series/" aria-label="Text Files">Text Files</a></li>
+		<li><a href="/data/#historical-tables" aria-label="Historical News Release Tables">News Release Tables</a></li>
+		
+		<li class="heading"><a href="/bls/moredata.htm" aria-label="More Sources of Data">More Sources of Data</a></li>
+		<li><a href="/rda/home.htm" aria-label="Bureau of Labor Statistics Restricted Data Access">Restricted Data Access</a></li>
+		<li><a href="/data/archived.htm" aria-label="Discontinued Databases">Discontinued Databases </a></li>
+		<li><a href="/help/hlpform1.htm" aria-label="Questions & Answers regarding Bureau of Labor Statistics website data retrieval tools">Questions &amp; Answers</a></li>
+		<li><a href="/help/notice.htm" aria-label="Special Notices">Special Notices </a></li>	
+	</ul>
+</div>
+<!-- *********************************************End DATABASES and TOOLS LIST ******************************************** --></div>
+    </li>
+    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/opub/" id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Publications <span class="circle-arrow"></span></a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown4"><!-- ********************************************** Begin PUBLICATIONS LIST ****************************************** -->
+<div class="main-nav-submenu"  id="submenu-pubs">    
+    <ul class="main-nav-submenu-inn"> 
+		<li class="heading"><a href="/opub/" aria-label="Latest Publications">Latest Publications</a></li>
+		<li><a href="/opub/ted/" aria-label="The Economics Daily">The Economics Daily</a></li>
+		<li><a href="/opub/mlr/" aria-label="Monthly Labor Review">Monthly Labor Review</a></li>
+		<li><a href="/opub/btn/" aria-label="Beyond the Numbers">Beyond the Numbers</a></li>
+		<li><a href="/spotlight/" aria-label="Spotlight on Statistics">Spotlight on Statistics</a></li>
+		<li><a href="/opub/reports" aria-label="Bureau of Labor Statistics Reports">Reports</a></li>
+		<li><a href="https://blogs.bls.gov/blog/" aria-label="Commissioner's Corner">Commissioner's Corner</a></li>
+		<li><a href="/video/" aria-label="Videos">Videos</a></li>
+		<li><a href="/careeroutlook/" aria-label="Career Outlook">Career Outlook</a></li>		
+    </ul>
+    <!-- 2nd column -->
+    <ul class="main-nav-submenu-inn">
+		<li><a href="/ooh/" aria-label="Occupational Outlook Handbook">Occupational Outlook Handbook</a></li>
+		<li><a href="/opub/geographic-profile/" aria-label="Geographic Profile">Geographic Profile</a></li>
+		<li><a href="/opub/hom/" aria-label="Handbook of Methods">Handbook of Methods</a></li>
+		<li><a href="/osmr/research-papers/" aria-label="Research Papers - Office of Survey Methods Research">Research Papers</a></li>
+		<li><a href="/opub/copyright-information.htm" aria-label="Copyright Information">Copyright Information</a></li>
+		<li><a href="/opub/opbinfo.htm" aria-label="Contact & Help">Contact &amp; Help </a></li>
+		<li><a href="/opub/update.htm" aria-label="Weekly Update">Weekly Update</a></li>		
+    </ul>
+</div>
+<!-- ***********************************************End PUBLICATIONS LIST ******************************************** --> </div>
+    </li>
+    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/bls/newsrels.htm" id="navbarDropdown5" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Economic Releases <span class="circle-arrow"></span></a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown5"><!-- ********************************************** Begin ECONOMIC RELEASES LIST ****************************************** -->
+<!-- 1st column -->
+
+<div class="main-nav-submenu" id="submenu-news">
+    <ul class="main-nav-submenu-inn">
+        <li class="heading"><a href="/bls/newsrels.htm#latest-releases" aria-label="Latest Releases">Latest Releases</a></li>
+		<li class="heading"><a href="/bls/newsrels.htm#major" aria-label="Major Economic Indicators">Major Economic Indicators</a></li>
+		<li class="heading"><a href="/schedule/news_release/" aria-label="Schedules for news Releases">Schedules for news Releases</a></li>
+		<li><a href="/schedule/" aria-label="Release Calendar By Month">By Month</a></li>
+		<li><a href="/schedule/schedule/by_prog/all_sched.htm" aria-label="Release Calendar By News Release">By News Release</a></li>
+		<li><a href="/schedule/news_release/current_year.asp" aria-label="Release Calendar Current Year">Current Year</a></li>
+		<li><a href="/bls/archived_sched.htm" aria-label="Schedules for Selected Bureau of Labor Statistics Economic News Releases for Prior Years">Prior Years</a></li>
+		<li class="heading"><a href="/bls/news-release/" aria-label="Archived News Releases">Archived News Releases</a></li>
+    </ul>
+    <!-- 2nd column -->
+    <ul class="main-nav-submenu-inn">
+        <li class="heading"><a href="/bls/newsrels.htm#OEUS" aria-label="Employment & Unemployment">Employment &amp; Unemployment</a></li>
+		<li><a href="/bls/newsrels.htm#OEUS" aria-label="Monthly">Monthly</a></li>
+		<li><a href="/bls/newsrels.htm#OEUS" aria-label="Quarterly, annual, and other">Quarterly, annual, and other</a></li>
+		<li class="heading"><a href="/bls/newsrels.htm#OPLC" aria-label="Inflation & Prices"> Inflation &amp; Prices</a></li>
+		<li class="heading"><a href="/bls/newsrels.htm#OCWC" aria-label="Pay & Benefits & Workplace Injuries">Pay &amp; Benefits &amp; Workplace Injuries</a></li>
+		<li class="heading"><a href="/bls/newsrels.htm#OPT" aria-label="Productivity & Technology">Productivity &amp; Technology</a></li>
+		<li class="heading"><a href="/bls/newsrels.htm#OEP" aria-label="Employment Projections">Employment Projections</a></li>
+		<li class="heading"><a href="/bls/newsrels.htm#NEWS" aria-label="Regional News Releases">Regional News Releases</a></li>
+    </ul>
+</div></div>
+    </li>
+    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="/k12/" id="navbarDropdown6" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Classroom <span class="circle-arrow"></span></a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown6"><!-- ********************************************** Begin Students Tab LIST ****************************************** -->
+<div class="main-nav-submenu" id="submenu-students">
+	<ul class="main-nav-submenu-inn">
+		<li class="heading"><a href="/k12/" aria-label="K-12 Student & Teacher Resources">K-12 Student &amp; Teacher Resources</a></li>		
+        <li><a href="/k12/games/" aria-label="Games & Quizzes">Games &amp; Quizzes</a></li>
+		<li><a href="/k12/students/" aria-label="Student's Desk">Student&apos;s Desk</a></li>
+		<li><a href="/k12/teachers/" aria-label="Teacher's Desk">Teacher&apos;s Desk</a></li>
+		<li><a href="/k12/faq.htm" aria-label="Questions & Answers">Questions &amp; Answers</a></li>
+    </ul>
+</div>
+<!-- ***********************************************End Students Tab LIST ******************************************** --></div>
+    </li>
+    <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="https://beta.bls.gov" id="navbarDropdown7" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Beta <span class="circle-arrow"></span></a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown7"><!-- ***********************************************Start BETA LIST ******************************************** -->
+
+<div class="main-nav-submenu" id="submenu-beta">
+  <ul class="main-nav-submenu-inn">
+    <li class="heading"><a href="https://beta.bls.gov/labs/?p=600" aria-label="Redesigned News Releases">Redesigned News Releases</a></li>
+  </ul>
+</div>
+<!-- ***********************************************End BETA LIST ******************************************** --></div>
+    </li>
+</ul>
+
+
+  </div>
+</nav>
+</div>
+
+		</div>
+		<div class="clearfloat"></div>
+	</div>
+</div>
+
+<!-- MAIN NAV END -->
+
+<!-- WRAPPER TOP BEGIN -->
+	<div id="wrapper-outer" role="main">
+		<div id="wrapper">
+			<div id="container">
+<!-- WRAPPER TOP END -->
+<!-- SUBDOMAIN TITLE TOP BEGIN -->
+				<div id="subdomain-title">
+					<span id="subdomain-title-text" role="heading" aria-level="1">
+					
+<!-- SUBDOMAIN TITLE TOP END -->
+<!-- SUBDOMAIN TITLE BEGIN -->
+<!--no_index_end-->
+Local Area Unemployment Statistics
+<!--no_index_start-->
+<!-- SUBDOMAIN TITLE END -->
+<!-- SUBDOMAIN TITLE MIDDLE BEGIN -->
+		</span>		
+<div class="article-tools-box-container">
+	<div class="article-tools-box social-media" style="margin: 8px 0px 0px 4px;" >
+       <span class="social-media">
+            SHARE ON:
+           <a href="javascript:void(0);" class="share_facebook"><img alt="share on facebook" src="/images/icons/facebook.png" title="Facebook" /></a>
+           <a href="javascript:void(0);" class="share_twitter"><img alt="share on twitter" src="/images/icons/twitter.png" title="Twitter" /></a>
+           <a href="javascript:void(0);" class="share_linkedin"><img alt="share on linkedin" src="/images/icons/linkedin.png" title="LinkedIn" /></a>
+           <!--<a href="javascript:void(0);" class="share_googleplus"><img src="/images/icons/google.png" title="Google Plus" /></a>-->
+         </span>
+    </div>
+	<div class="article-tools-box" style="margin-right: 4px;">
+		<a href="https://data.bls.gov/cgi-bin/print.pl/lau/home.htm">PRINT:<img src="/images/icons/icon_small_printer.gif" alt="Print" width="16" height="16" style="padding-left:3px"></a>
+	</div>
+</div>
+
+<!-- SUBDOMAIN TITLE MIDDLE END -->
+		
+<div class="bootstrap">
+  <div class="article-tools-box"><a href="#modal-box-lau" data-toggle="modal" >LAU <img src="/images/icons/icon_small_link.gif" alt="LAU Program Links" ></a>
+  </div>
+  <div id="modal-box-lau" class="modal fade" tabindex="-1" role="dialog"  aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="modal-title" >Local Area Unemployment Statistics</span>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span> </button>
+        </div>
+        <div class="modal-body">
+          <ul class="modal-links">
+              <li><a href="/lau/">LAU Homepage</a></li>
+			  <li><a href="/lau/lauov.htm">LAU Overview</a></li>
+			  <li><a href="/lau/laufaq.htm">LAU FAQ</a></li>
+			  <li><a href="/lau/laucont.htm">Contact LAU</a></li>       
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+	
+<!-- SUBDOMAIN TITLE BOTTOM BEGIN -->
+    
+	</div> <!-- End Subdomain Title Div -->
+	<div id="subdomain-title-border"></div>
+
+<!-- SUBDOMAIN TITLE BOTTOM END -->
+
+<!-- 3COL LAYOUT COL1 BEGIN -->	
+<div class="clearfloat" id="startcontent"></div>
+<table id="main-content-table">
+	<tr>
+		<td id="secondary-nav-td">
+			<div id="secondary-nav">
+
+<!-- 3COL LAYOUT COL1 END -->
+
+<!-- SECONDARY NAV BEGIN -->		
+<div class="secondary-nav">
+		<ul class="level1">
+			<li class="menuhead"><a href="/lau/home.htm">BROWSE LAU</a></li>
+			<li><a href="/lau/home.htm">LAU HOME</a></li>
+			<li><a href="/lau/lauov.htm">LAU OVERVIEW</a></li>
+			<li><a href="/lau/news.htm">LAU NEWS RELEASES</a></li>
+			<li><a href="/lau/data.htm">LAU DATABASES</a></li>
+			<li><a href="/lau/tables.htm">LAU TABLES & MAPS</a></li>
+			<li><a href="/lau/publications.htm">LAU DOCUMENTATION</a></li>
+			<li><a href="/lau/laufaq.htm">LAU FAQs</a></li>
+			<li><a href="/lau/laucont.htm">CONTACT LAU</a></li>
+		</ul>
+	</div>
+	<form action="/search/query" id="search-secondary-nav-form" method="get">
+		<p>
+			<label for="search-secondary-nav-query">SEARCH LAU</label>
+			<input name="prefix" type="hidden" id="search-secondary-nav-category" value="https://www.bls.gov/lau">
+			<input name="query" type="text" id="search-secondary-nav-query">
+			<input type="submit" name="submit" id="search-secondary-nav-submit" value="Go">
+		</p>
+	</form>
+
+
+<div class="secondary-nav">
+	<ul class="level1">
+		<li class="menuhead"><a href="/ces/home.htm">LAU TOPICS</a></li>
+		<li class="submenu"><a href="#">JOBSEEKERS</a>
+			<ul class="level2">
+					<li><a href="/lau/peoplebox.htm#Q07">INFORMATION ON APPLYING FOR UNEMPLOYMENT BENEFITS</a></li>
+			</ul></li>
+		<li class="submenu"><a href="#">PUBLIC POLICYMAKERS</a>
+			<ul class="level2">
+					<li><a href="/lau/lauadminuses.pdf">ADMINISTRATIVE USES OF LOCAL AREA UNEMPLOYMENT STATISTICS</a></li>
+			</ul></li>
+		<li class="submenu"><a href="#">RESEARCHERS</a>
+			<ul class="level2">
+					<li><a href="/lau/laumthd.htm">SUBNATIONAL LABOR FORCE ESTIMATION METHODOLOGY</a></li>
+			</ul></li>
+	
+			<!--<ul class="level2">
+					<li><a href="/lau/lauavail.htm">DATA AVAILABILITY</a></li></ul>-->
+			
+		<li class="submenu"><a href="#">GEOGRAPHY</a>
+			<ul class="level2">
+					<li><a href="/lau/laugeo.htm">GEOGRAPHIC CONCEPTS</a></li>
+			</ul></li>
+		<li class="submenu"><a href="#">METHODOLOGY</a>
+			<ul class="level2">
+					<li><a href="/lau/laumthd.htm">ESTIMATION METHODOLOGY</a></li>
+			</ul></li>
+	</ul>
+<div class="secondary-nav">
+ <div style="margin-top: 20px;">
+</div>
+</div></div>
+<!-- SECONDARY NAV END -->
+
+<!-- 3COL LAYOUT COL2 BEGIN -->
+			</div>
+		</td>
+		<td id="main-content-td" class="main-content">
+			<div id="bodytext" class="verdana md">
+			
+
+<!-- 3COL LAYOUT COL2 END -->
+
+<!-- ThreeColHeadAutoWidth End -->
+<!--no_index_end-->
+<!-- MAIN CONTENT BEGIN -->
+
+<!-- ****************************************** End HEADER ************************************************** -->
+<p><a name="top"></a>The <strong>Local Area Unemployment Statistics (LAUS)</strong> program produces monthly and annual employment, unemployment, and labor force data for Census regions and divisions, States, counties, metropolitan areas, and many cities, by place of residence. <a href="/lau/lauov.htm"><strong>More &raquo;</strong></a> 
+<!-- Place announcements here -->
+<div class="highlight-box-red">
+	<span class="heading">Announcements</span>
+  <ul>
+	  	<li>For important information on revisions to data for model-based areas in 2022 <a href="/lau/important-information-on-revisions-to-data-for-model-based-areas-in-2022.htm">Read More &raquo;</a></li> 
+    	<li>For information on implementation plans of the federal-state cooperative programs for new metropolitan and micropolitan area delineations <a href="/bls/msa-redelineation-announcement.htm">Read More &raquo;</a></li>
+  </ul>
+</div>
+<!-- End announcements here -->
+<div class="highlight-box-yellow">
+  <span class="heading">For Your Information</span>
+  <ul>
+    <li><a href="/lau/launews1.htm#annual-revisions">Important Information on LAUS Data Revisions</a></li>
+    <li><a href="/lau/metrossa.htm"> Seasonally Adjusted Metropolitan Area Estimates</a></li>
+    <li><a href="/lau/stalt.htm">Alternative Measures of Labor Underutilization for States</a></li>
+    <li><a href="/lau/ex14tables.htm">Expanded State Employment Status Demographic Data</a></li>
+    <li><a href="#cntyaa">Labor Force Data by County, Annual Averages</a></li>
+	  <li><a href="/lau/seasonal-adjustment-for-weekly-unemployment-insurance-claims.htm">Seasonal Adjustment for Weekly Unemployment Insurance Claims</a></li>
+  </ul>
+</div>
+<div class="highlight-box-yellow">
+  <span class="heading">How can I apply for unemployment insurance?</span>
+  <p>The Bureau of Labor Statistics does not administer or oversee unemployment insurance (UI) programs. You should contact your State workforce agency for information, using the Department of Labor's <a href="https://www.careeronestop.org/LocalHelp/UnemploymentBenefits/unemployment-benefits.aspx">Career Onestop Service Locator</a>.</p>
+</div>
+
+<!-- Begin Next Scheduled Release Date (NSRD) SSI -->
+<div class="highlight-box-green">
+  <span class="heading">Next Releases:</span>
+  <ul>
+    <li>The State Employment and Unemployment data for August 2022 are scheduled 
+to be released on September 16, 2022, at 10:00 A.M. Eastern Time.
+</li>
+    <li>The Metropolitan Area Employment and Unemployment data for August 2022 are
+scheduled to be released on September 28, 2022, at 10:00 A.M. Eastern Time.
+</li>
+  </ul>
+</div>
+<!-- End Next Scheduled Release Date (NSRD) SSSI  --> 
+
+<div class="highlight-box-blue in-this-page bold"> 
+<span class="heading">On This Page</span>
+  <div class="in-this-page-content">
+    <ul>
+      <li><a href="#news">LAU News Releases</a></li>
+      <li><a href="#data">LAU Databases</a></li>
+      <li><a href="#tables">LAU Tables</a></li>
+      <li><a href="#publications">LAU Publications</a></li>
+    </ul>
+    <ul>
+      <li><a href="#faq">LAU FAQ</a></li>
+      <li><a href="#notices">LAU Special Notices</a></li>
+      <li><a href="#links">Related Links</a></li>
+      <li><a href="#contact">Contact LAU</a></li>
+    </ul>
+  </div>
+</div>
+<h2 class="content-tab" id="news"><a><strong>LAU Economic News Releases</strong></a></h2>
+<div class="content-tab-body">
+<p>												<div class="nr-entry">
+			<span class="heading">
+											<a href="/news.release/laus.nr0.htm" 
+				title = "July jobless rates down in 14 states, up in 3; payroll jobs up in 20 states, down in 2">
+				July jobless rates down in 14 states, up in 3; payroll jobs up in 20 states, down in 2						</a></span>
+			<p><span class="date">
+				08/19/2022			</span></p>
+							<p>
+								In July, unemployment rates were lower in 14 states and the District of Columbia,
+higher in 3 states, and stable in 33 states. Nonfarm payroll employment increased
+in 20 states, decreased in 2 states, and was essentially unchanged in 28 states
+and the District.						<br />
+			<a class="blue-links" href="/news.release/laus.nr0.htm" title="HTML version of State Employment and Unemployment (Monthly)">
+			HTML</a> 
+			| <a class="blue-links" href="/news.release/pdf/laus.pdf" title="PDF version of State Employment and Unemployment (Monthly)" >
+			PDF</a>
+			| <a class="blue-links" href="/feed/laus.rss" title="Subscribe to the State Employment and Unemployment (Monthly) News Release Feed" >
+			RSS</a>
+							| <a class="blue-links" href="/charts/state-employment-and-unemployment/" title = "Charts related to the latest State Employment and Unemployment (Monthly) News Release">
+				Charts</a>
+									</p>
+		</div>
+
+
+</p>
+<p>												<div class="nr-entry">
+			<span class="heading">
+											<a href="/news.release/metro.nr0.htm" 
+				title = "July jobless rates down over the year in 383 of 389 metro areas; payroll jobs up in 99">
+				July jobless rates down over the year in 383 of 389 metro areas; payroll jobs up in 99						</a></span>
+			<p><span class="date">
+				08/31/2022			</span></p>
+							<p>
+								Jobless rates were lower in July than a year earlier in 383 of the 389 metropolitan
+areas, higher in 5, and unchanged in 1. Nonfarm payroll employment increased over
+the year in 99 metropolitan areas and was essentially unchanged in 290.						<br />
+			<a class="blue-links" href="/news.release/metro.nr0.htm" title="HTML version of Metropolitan Area Employment and Unemployment (Monthly)">
+			HTML</a> 
+			| <a class="blue-links" href="/news.release/pdf/metro.pdf" title="PDF version of Metropolitan Area Employment and Unemployment (Monthly)" >
+			PDF</a>
+			| <a class="blue-links" href="/feed/metro.rss" title="Subscribe to the Metropolitan Area Employment and Unemployment (Monthly) News Release Feed" >
+			RSS</a>
+							| <a class="blue-links" href="/charts/metro-area-employment-and-unemployment/" title = "Charts related to the latest Metropolitan Area Employment and Unemployment (Monthly) News Release">
+				Charts</a>
+									</p>
+		</div>
+
+
+</p>
+<h3 class="lev1">Current</h3>
+<ul>
+	<li>State Employment and Unemployment (<a href="/news.release/laus.toc.htm">HTML</a>) (<a href="/news.release/pdf/laus.pdf">PDF</a>)</li>
+	<li>Metropolitan Area Employment and Unemployment (<a href="/news.release/metro.toc.htm">HTML</a>) (<a href="/news.release/pdf/metro.pdf">PDF</a>)</li>
+	<li>Subscribe to the <a href="https://public.govdelivery.com/accounts/USDOLBLS/subscriber/new">BLS News Service</a>&mdash; receive BLS economic news releases by e-mail.</li>
+	<li>Schedule of Upcoming Releases</li>
+    <ul>
+    <li><a href="/schedule/news_release/laus.htm">State Employment and Unemployment</a></li>
+    <li><a href="/schedule/news_release/metro.htm">Metropolitan Area Employment and Unemployment</a></li>
+    </ul>
+</ul>
+<h3 class="lev1">Annual</h3>
+<p>												<div class="nr-entry">
+			<span class="heading">
+											<a href="/news.release/srgune.nr0.htm" 
+				title = "Jobless rates down in 49 states in 2021; employment-population ratios up in 38 states">
+				Jobless rates down in 49 states in 2021; employment-population ratios up in 38 states						</a></span>
+			<p><span class="date">
+				03/02/2022			</span></p>
+							<p>
+								Annual average unemployment rates decreased in 49 states and the District of Columbia in 2021,
+while the rate was little changed in 1 state. Employment-population ratios increased in 38
+states and the District, decreased in 1 state, and were little changed in 11 states.						<br />
+			<a class="blue-links" href="/news.release/srgune.nr0.htm" title="HTML version of State Unemployment (Annual)">
+			HTML</a> 
+			| <a class="blue-links" href="/news.release/pdf/srgune.pdf" title="PDF version of State Unemployment (Annual)" >
+			PDF</a>
+			| <a class="blue-links" href="/feed/srgune.rss" title="Subscribe to the State Unemployment (Annual) News Release Feed" >
+			RSS</a>
+									</p>
+		</div>
+
+
+</p>
+<h4 class="lev1">Archived</h4>
+<p><strong>Caution: data in many archived news releases have been revised in subsequent releases.</strong></p>
+<ul>
+	<li>Archived <a href="/bls/news-release/laus.htm">State Employment and Unemployment</a> Releases (1993-forward)</li>
+	<li>Archived <a href="/bls/news-release/metro.htm">Metropolitan Area Employment and Unemployment</a> Releases (1998-forward)</li>
+	<li>Archived <a href="/bls/news-release/home.htm#SRGUNE">Regional and State Unemployment</a> (Annual) Releases (1992-forward)</li>
+</ul>
+</div>
+<p>&nbsp; 
+<h2 class="content-tab" id="data"><a><strong>Featured LAU Searchable Databases</strong></a></h2>
+<div class="content-tab-body">
+<ul>
+	<li><p>Please note that the "Get Detailed LAUS Statistics" tools for data retrieval will be unavailable from 10:00 AM to approximately 10:30 AM on the day of a Local Area Unemployment Statistics release because the LAUS database is updated during that time. Schedules of upcoming release dates are available as follows:</p>  
+   <ul>
+    <li><a href="/schedule/news_release/laus.htm">State Employment and Unemployment</a></li>
+    <li><a href="/schedule/news_release/metro.htm">Metropolitan Area Employment and Unemployment</a></li>
+    </ul>
+	<li><p><a href="/lau/lausad.htm">Instructions for Extracting Data</a>--Quick, easy instructions on how to extract Local Area Unemployment Statistics (LAUS) data.</p></li>
+</ul>
+	<h3>Databases</h3>
+		<script type="text/javascript">
+$(document).ready(function(){
+try{
+$(".tooltip-label").tooltip({ position: "top center", offset:[0,50]}).dynamic({ bottom: { direction: 'down' } }).click(function(e){ e.preventDefault();});
+}catch(e){}
+});
+</script>
+	<table class="matrix-table">
+		<tbody>
+			<tr>
+				<th>Database Name</th>
+				<th>Special<br>Notice</th>
+				<th><a title="Top Picks" rel="Also known as the &quot;Most Requested Series&quot;, this tool allows users to quickly retrieve BLS time series data from lists of those most commonly requested." class="tooltip-label" href="#">Top<br>
+											Picks</a></th>
+				<th><a title="Data Finder" rel="Also known as the &quot;Data Query Tool&quot;, this tool allows users to conveniently search multiple data sets all at once. Users can extract specific data by searching by keyword or by filtering through multiple topics, measures, and attributes." class="tooltip-label" href="#">Data<br> Finder</a></th>
+										<th><a title="One Screen" rel="Requires a JavaScript-enabled browser. Choose the data you want from BLS databases on a simple, one-screen form." class="tooltip-label" href="#">One<br>
+											Screen</a></th>
+										<th><a title="Multi-Screen" rel="Allows you to obtain BLS time series data based on choices you make using a form-based query application that spans several screens. Can be used without a Java-enabled browser." class="tooltip-label" href="#">Multi-<br>
+											Screen</a></th>
+										<th><a title="Tables" rel="Provides a link to tables that have been created for you by BLS. Format of tables varies; it may be HTML, PDF, text, and/or Excel." class="tooltip-label" href="#">Tables</a></th>
+										<th><a title="Text Files" rel="Provides a link to files containing detailed data; these files are sometimes called flat files and supplant files of similar content formerly housed on the BLS FTP server.  Ideal for users requiring large volumes of data for their analytical needs." class="tooltip-label" href="#">Text Files</a></th>
+			</tr>
+
+		
+			<tr>
+				<td class="col-a-head">
+					<strong>Local Area Unemployment Statistics (LAUS)</strong><br>
+				</td>
+				<td class="col-a"><a href="/lau/launews1.htm"><img src="/images/icons/icon_large_special_notice.gif" alt="Special Notice for LAUS" title="Special Notice for LAUS"></a></td>
+				<td class="col-a"><a href="https://data.bls.gov/cgi-bin/surveymost?la"><img src="/images/icons/icon_large_quick_search.gif" alt="Top Picks for LAUS" title="Top Picks for LAUS" ></a></td>
+                <td class="col-a"><a href="https://beta.bls.gov/dataQuery/find?fq=survey:%5Bla%5D&s=popularity:D"><img src="/images/icons/data_finder_icon.png" alt="Data Finder for LAUS" title="Data Finder for LAUS"  ></a></td>
+				<td class="col-a"><a href="javascript:;" onClick="window.open('https://data.bls.gov/pdq/querytool.jsp?survey=la','blswindow','toolbar=yes,location=yes,status=no,menubar=no,scrollbars=yes,resizable=yes,width=800,height=480,top=80,left=80')"><img src="/images/icons/icon_large_one_screen.gif" alt="One Screen Data Search for LAUS" title="One Screen Data Search for LAUS"></a></td>
+				<td class="col-a"><a href="https://data.bls.gov/cgi-bin/dsrv?la"><img src="/images/icons/icon_large_multi_screen.gif" alt="Multi Screen Data Search for LAUS" title="Multi Screen Data Search for LAUS"></a></td>
+				<td class="col-a"><a href="/lau/#tables"><img src="/images/icons/icon_large_table.gif" alt="Tables for LAUS" title="Tables for LAUS"></a></td>
+				<td class="col-a"><a href="https://download.bls.gov/pub/time.series/la/"><img src="/images/icons/icon_large_ftp.gif" alt="Text Files for LAUS" title="Text Files for LAUS"></a></td>
+			</tr>
+					</tbody>
+		</table>
+		<p>&nbsp;</p>
+	
+	<h1 id="maps">Create Customized Maps</h1>
+<table class="matrix-table">
+          <tbody>
+                   <tr>
+                             <th>Create Customized Maps</th>
+            <th>Maps</th>
+                   </tr>
+                   <tr>
+                             <td class="col-a-head"><strong>Mapping Unemployment Rates (States and Counties)
+</strong><br></td>
+                             <td class="col-a"><a href="https://data.bls.gov/maps/la" target="new"><img src="/images/icons/icon_large_map.gif" alt="Mapping Unemployment Rates (States and Counties)"  title="Mapping Unemployment Rates (States and Counties)" border="0" width="40" height="40" style="vertical-align: middle;"></a></td>
+          </tr>              
+          </tbody>
+</table>
+
+
+	<ul>
+		<li><a href="https://data.bls.gov/cgi-bin/srgate">Series Report</a> &#8212;Already know the series identifier for the statistic you want? Use this shortcut to retrieve your data.</li>
+	</ul>
+</div>
+<p>&nbsp; 
+<h2 class="content-tab" id="tables"><a><strong>Tables and Maps Created by BLS</strong></a></h2>
+<div class="content-tab-body">
+  <h3>Monthly </h3>
+  <h4>STATEWIDE DATA</h4>
+  <ul>
+    <!-- **************************** INSERT LAUS AUTO SUPPL TOC HERE (LABSTAT ONLY) ***************************** -->
+    <h5>Tables</h5>
+    <ul>
+      <li><a href="/web/laus/lauhsthl.htm">Current Unemployment Rates for States and Historical Highs/Lows</a> </li>
+      <li><a href="/web/laus/laumstrk.htm">Unemployment Rates for States</a> </li>
+      <li><a href="/web/laus/laumstcm.htm">Over-the-Month Change in Unemployment Rates for States</a> </li>
+      <li><a href="/web/laus/laumstch.htm">Over-the-Year Change in Unemployment Rates for States</a> </li>
+      <li><a href="/lau/rdscnp16.htm">Employment Status of the Civilian Noninstitutional Population by State</a></li>
+    </ul>
+    <h5>Map</h5>
+    <ul>
+      <li><a href="/web/laus/mstrtcr1.gif">Unemployment rates by state, seasonally adjusted (GIF)</a></li>
+      <li><a href="/web/laus/mstrtcr2.pdf">Unemployment rates by state, seasonally adjusted (PDF)</a></li>
+    </ul>
+  </ul>
+  <!-- **************************** END OF LAUS AUTO SUPPL TOC HERE ******************************************** -->
+  <h4>METROPOLITAN AREA DATA</h4>
+  <!-- **************************** INSERT METRO AUTO SUPPL TOC HERE (LABSTAT ONLY) **************************** -->
+  <ul>
+    <h5>Tables</h5>
+    <ul>
+      <li><a href="/web/metro/laummtrk.htm"> Unemployment Rates for Metropolitan Areas </a></li>
+      <li><a href="/web/metro/laummtch.htm"> Over-the-Year Change in Unemployment Rates for Metropolitan Areas </a></li>
+      <li><a href="/web/metro/laulrgma.htm"> Unemployment Rates for Large Metropolitan Areas </a></li>
+      <li><a href="/web/metro/laulrgch.htm"> Over-the-Year Change in Unemployment Rates for Large Metropolitan Areas </a></li>
+    </ul>
+    <h5>Map</h5>
+    <ul>
+      <li><a href="/web/metro/mmartcr1.gif"> Unemployment Rates by Metropolitan Area, not seasonally adjusted (GIF) </a></li>
+      <li><a href="/web/metro/mmartcr2.pdf"> Unemployment Rates by Metropolitan Area, not seasonally adjusted (PDF) </a></li>
+    </ul>
+  </ul>
+  </ul>
+  <br>
+  <!-- **************************** END OF METRO AUTO SUPPL TOC HERE ******************************************* --> 
+  <!-- Start 12-month Average Tables --> 
+  <!-- ***** BEGIN OF NESTED TABLE ****** --> 
+  <!-- Start County Data -->
+  
+  <h4>COUNTY DATA</h4>
+  </p>
+  <ul>
+    <h5>Table</h5>
+    <ul>
+      <li>Labor force data by county, not seasonally adjusted, latest 14 months (<a href="/web/metro/laucntycur14.txt">TXT</a>) (<a href="/web/metro/laucntycur14.zip">ZIP</a> 1,847KB)</li>
+    </ul>
+    <h5>Map</h5>
+    <ul>
+      <li>Unemployment rates by county, latest 12-month averages (<a href="/web/metro/twmcort.gif">GIF</a>) (<a href="/web/metro/twmcort.pdf">PDF</a>)</li>
+    </ul>
+    <br />
+  </ul>
+  <!-- Start New England Data --> 
+  
+  <!-- Start Annual Average Tables -->
+  <h3>Annual Average </h3>
+  <!-- Start Statewide Data -->
+  
+  <h4>STATEWIDE DATA</strong></h4>
+  </p>
+  <h5>Tables</h5>
+  <ul>
+    <li> Unemployment rates for States:
+      <ul>
+	    <li><a href="/lau/lastrk21.htm">2021</a></span> </li>
+        <li><a href="/lau/lastrk20.htm">2020</a></li>
+        <li><a href="/lau/lastrk19.htm">2019</a> </li>
+        <li><a href="/lau/lastrk18.htm">2018</a> </li>
+        <li><a href="/lau/lastrk17.htm">2017</a></li>
+      </ul>
+    <li>Over-the-year change in unemployment rates for States:</li>
+    <ul>
+	    <li><a href="/lau/lastch21.htm">2020-2021</a></li>
+      <li><a href="/lau/lastch20.htm">2019-2020</a></li>
+      <li><a href="/lau/lastch19.htm">2018-2019</a></li>
+      <li><a href="/lau/lastch18.htm">2017-2018</a> </li>
+      <li><a href="/lau/lastch17.htm">2016-2017</a></li>
+    </ul>
+    <li><a href="/lau/rdscnp16.htm">Employment status of the civilian noninstitutional population by state</a></li>
+    <li><a href="/opub/geographic-profile/home.htm">Geographic Profile of Employment and Unemployment</a></li>
+    <li><a href="/lau/ex14tables.htm">Expanded State Employment Status Demographic Data</a></li>
+    <li><a href="/lau/notescps.htm">Notes on using Current Population Survey subnational data</a></li>
+  </ul>
+  <h5>Maps</h5>
+  <ul>
+    <li>Latest annual average State unemployment rates (<a href="/lau/maps/aastrate.gif">GIF</a>) (<a href="/lau/maps/aastrate.pdf">PDF</a>)</li>
+    <li>Latest over-the-year change in unemployment rates by State (<a href="/lau/maps/aastrtch.gif">GIF</a>) (<a href="/lau/maps/aastrtch.pdf">PDF</a>)</li>
+    <li>Latest employment-population ratios by State (<a href="/lau/maps/aastep.gif">GIF</a>) (<a href="/lau/maps/aastep.pdf">PDF</a>)</li>
+    <li>Historical State unemployment rate maps (<a href="/lau/maps/stmaps.zip">ZIP</a>) (<a href="/lau/maps/stseries.pdf">PDF</a>)</li>
+    <p><a href="/lau/lauzip.htm">How to View Zip Files</a></p>
+  </ul>
+  <h4>METROPOLITAN AREA DATA</h4>
+  </p>
+  <h5>Tables</h5>
+  <ul>
+    <li>Unemployment rates for metropolitan areas:
+      <ul>
+		  <li> <a href="/lau/lamtrk21.htm">2021</a> <span class="new">NEW</span></li>
+		  <li> <a href="/lau/lamtrk20.htm">2020</a></li>		  
+		  <li> <A href="/lau/lamtrk19.htm">2019</a></li>
+        <li> <A href="/lau/lamtrk18.htm">2018</a></li>
+        <li><A href="/lau/lamtrk17.htm">2017</a></li>
+      </ul>
+    <li>Unemployment rates for large metropolitan areas:
+      <ul>
+		    <li><a href="/lau/malrgrank21.htm">2021</a> <span class="new">NEW</span></li> 
+		    <li><a href="/lau/malrgrank20.htm">2020</a></li>		  
+		  <li><A href="/lau/malrgrank19.htm">2019</a></li>
+        <li><A href="/lau/malrgrank18.htm">2018</a></li>
+        <li><A href="/lau/malrgrank17.htm">2017</a></li>
+      </ul>
+    <li>Over-the-year change in unemployment rates for metropolitan areas:
+      <ul>
+		<li><A href="/lau/lamtch21.htm">2020-2021</a> <span class="new">NEW</span></li> 
+		<li><A href="/lau/lamtch20.htm">2019-2020</a></li>		  
+        <li><A href="/lau/lamtch19.htm">2018-2019</a></li>
+        <li><A href="/lau/lamtch18.htm">2017-2018</a></li>
+        <li><A href="/lau/lamtch17.htm">2016-2017</a></li>
+
+      </ul>
+    <li>Over-the-year change in unemployment rates for large metropolitan areas:
+      <ul>
+        <li><a href="/lau/malrgch21.htm">2020-2021</a> <span class="new">NEW</span></li>
+        <li><a href="/lau/malrgch20.htm">2019-2020</a></li>		  
+        <li><A href="/lau/malrgch19.htm">2018-2019</a></li>
+        <li><A href="/lau/malrgch18.htm">2017-2018</a></li>
+        <li><A href="/lau/malrgch17.htm">2016-2017</a></li>
+      </ul>
+  </ul>
+  <h5>Maps</h5>
+  <ul>
+    <li>Latest annual average metropolitan area unemployment rates (<a href="/lau/maps/aamarate.gif">GIF</a>) (<a href="/lau/maps/aamarate.pdf">PDF</a>)
+    <li>Historical metropolitan area unemployment rates (<a href="/lau/maps/mamaps.zip">ZIP</a> 4.0M) (<a href="/lau/maps/maseries.pdf">PDF</a> 2.2M) </li>
+  </ul>
+  <p><a href="/lau/lauzip.htm">How to View Zip Files</a></p>
+  
+  <!-- Start Metropolitan Data --> 
+  
+  <br>
+  <!-- **************************** END OF METRO AUTO SUPPL TOC HERE ******************************************* --> 
+  <!-- Start 12-month Average Tables --> 
+  <!-- ***** BEGIN OF NESTED TABLE ****** --> 
+  <!-- Start County Data -->
+  
+  <h4 id="cntyaa">COUNTY DATA</strong></h4>
+  </p>
+  <h5>Tables</h5>
+  <ul>
+    <li>Labor force data by county, 2021 annual averages (<a href="/lau/laucnty21.txt">TXT</A>, <A href="/lau/laucnty21.xlsx">XLS</a>) <span class="new">NEW</span></li>
+    <li>Labor force data by county, 2020 annual averages (<a href="/lau/laucnty20.txt">TXT</A>, <A href="/lau/laucnty20.xlsx">XLS</a>)</li>	  
+    <li>Labor force data by county, 2019 annual averages (<A href="/lau/laucnty19.txt">TXT</A>, <A href="/lau/laucnty19.xlsx">XLS</A>)</li>
+    <li>Labor force data by county, 2018 annual averages (<A href="/lau/laucnty18.txt">TXT</A>, <A href="/lau/laucnty18.xlsx">XLS</A>)</li>
+    <li>Labor force data by county, 2017 annual averages (<A href="/lau/laucnty17.txt">TXT</A>, <A href="/lau/laucnty17.xlsx">XLS</A>)</li>
+    <li>Labor force data by county, 2016 annual averages (<a href="/lau/laucnty16.txt">TXT</a>, <a href="/lau/laucnty16.xlsx">XLS</a>)</li>
+    <li>Labor force data by county, 2015 annual averages (<a href="/lau/laucnty15.txt">TXT</a>, <a href="/lau/laucnty15.xlsx">XLS</a>)</li>
+    <li>Labor force data by county, 2014 annual averages (<a href="/lau/laucnty14.txt">TXT</a>, <a href="/lau/laucnty14.xlsx">XLS</a>)</li>
+    <li>Labor force data by county, 2013 annual averages (<a href="/lau/laucnty13.txt">TXT</a>, <a href="/lau/laucnty13.xlsx">XLS</a>)</li>
+    <li>Labor force data by county, 2012 annual averages (<a href="/lau/laucnty12.txt">TXT</a>, <a href="/lau/laucnty12.xlsx">XLS</a>)</li>
+    <li>Labor force data by county, 2011 annual averages (<a href="/lau/laucnty11.txt">TXT</a>, <a href="/lau/laucnty11.xlsx">XLS</a>)</li>
+    <li>Labor force data by county, 2010 annual averages (<a
+                          href="/lau/laucnty10.txt">TXT</a>, <a
+                          href="/lau/laucnty10.xlsx">XLS</a>)</li>
+    <li>Labor force data by county, 2009 annual averages (<a
+                          href="/lau/laucnty09.txt">TXT</a>, <a
+                          href="/lau/laucnty09.xlsx">XLS</a>)</li>
+    <li>Labor force data by county, 2008 annual averages (<a
+                          href="/lau/laucnty08.txt">TXT</a>, <a
+                          href="/lau/laucnty08.xlsx">XLS</a>)</li>
+    <li>Labor force data by county, 2007 annual averages (<a
+                          href="/lau/laucnty07.txt">TXT</a>, <a
+                          href="/lau/laucnty07.xlsx">XLS</a>)</li>
+    <li>Labor force data by county, 2006 annual averages (<a
+                          href="/lau/laucnty06.txt">TXT</a>, <a
+                          href="/lau/laucnty06.xlsx">XLS</a>)</li>
+    <li>Labor force data by county, 2005 annual averages (<a
+                          href="/lau/laucnty05.txt">TXT</a>, <a
+                          href="/lau/laucnty05.xlsx">XLS</a>)</li>
+    <li>Labor force data by county, 2004 annual averages (<a
+                          href="/lau/laucnty04.txt">TXT</a>, <a
+                          href="/lau/laucnty04.xlsx">XLS</a>)</li>
+    <li>Labor force data by county, 2003 annual averages (<a
+                          href="/lau/laucnty03.txt">TXT</a>, <a
+                          href="/lau/laucnty03.xlsx">XLS</a>)</li>
+    <li> Labor force data by county, 2002 annual averages (<a
+                          href="/lau/laucnty02.txt">TXT</a>, <a
+                          href="/lau/laucnty02.xlsx">XLS</a>)</li>
+    <li>Labor force data by county, 2001 annual averages (<a
+                          href="/lau/laucnty01.txt">TXT</a>, <a
+                          href="/lau/laucnty01.xlsx">XLS</a>)</li>
+    <li>Labor force data by county, 2000 annual averages (<a
+                          href="/lau/laucnty00.txt">TXT</a>, <a
+                          href="/lau/laucnty00.xlsx">XLS</a>)</li>
+    <li>Labor force data by county, 1999 annual averages (<a
+                          href="/lau/laucnty99.txt">TXT</a>, <a
+                          href="/lau/laucnty99.xlsx">XLS</a>)</li>
+    <li>Labor force data by county, 1998 annual averages (<a
+                          href="/lau/laucnty98.txt">TXT</a>, <a
+                          href="/lau/laucnty98.xlsx">XLS</a>)</li>
+    <li>Labor force data by county, 1997 annual averages (<a
+                          href="/lau/laucnty97.txt">TXT</a>, <a
+                          href="/lau/laucnty97.xlsx">XLS</a>)</li>
+    <li>Labor force data by county, 1996 annual averages (<a
+                          href="/lau/laucnty96.txt">TXT</a>, <a
+                          href="/lau/laucnty96.xlsx">XLS</a>)</li>
+    <li>Labor force data by county, 1995 annual averages (<a
+                          href="/lau/laucnty95.txt">TXT</a>, <a
+                          href="/lau/laucnty95.xlsx">XLS</a>)</li>
+    <li>Labor force data by county, 1994 annual averages (<a
+                          href="/lau/laucnty94.txt">TXT</a>, <a
+                          href="/lau/laucnty94.xlsx">XLS</a>)</li>
+    <li>Labor force data by county, 1993 annual averages (<a
+                          href="/lau/laucnty93.txt">TXT</a>, <a
+                          href="/lau/laucnty93.xlsx">XLS</a>)</li>
+    <li>Labor force data by county, 1992 annual averages (<a
+                          href="/lau/laucnty92.txt">TXT</a>, <a
+                          href="/lau/laucnty92.xlsx">XLS</a>)</li>
+    <li>Labor force data by county, 1991 annual averages (<a
+                          href="/lau/laucnty91.txt">TXT</a>, <a
+                          href="/lau/laucnty91.xlsx">XLS</a>)</li>
+    <li>Labor force data by county, 1990 annual averages (<a
+                          href="/lau/laucnty90.txt">TXT</a>, <a
+                          href="/lau/laucnty90.xlsx">XLS</a>)</li>
+  </ul>
+  <h5>Maps</h5>
+  <ul>
+    <li>Latest annual average county unemployment rates (<a href="/lau/maps/aacnrt.gif">GIF</a>) (<a href="/lau/maps/aacnrt.pdf">PDF</a>)
+    <li>Historical county unemployment rates (<a href="/lau/maps/cnmaps.zip">ZIP</a> 6.3M) (<a href="/lau/maps/cnseries.pdf">PDF</a> 10.1M)
+      <p><a href="/lau/lauzip.htm">How to View Zip Files</a></p>
+    </li>
+  </ul>
+  <br>
+  <!-- Start New England Data --> 
+  
+  <!-- Start City Data -->
+  <h4>CITY DATA</h4>
+  <h5>Tables</h5>
+  <ul>
+    <li>Unemployment rates for the 50 largest cities
+      <ul>
+        <li><a href="/lau/lacilg21.htm">2021</a> <span class="new">NEW</span></li>
+        <li><a href="/lau/lacilg20.htm">2020</a></li>		  
+        <li><A href="/lau/lacilg19.htm">2019</A></li>
+        <li><A href="/lau/lacilg18.htm">2018</A></li>
+        <li><A href="/lau/lacilg17.htm">2017</A></li>
+      </ul>
+  </ul>
+  </li>
+  </ul>
+</div>
+<p>&nbsp;</p>
+ 
+<h2 class="content-tab" id="publications"><a><strong>Featured LAU Documentation</strong></a></h2>
+<div class="content-tab-body">
+  <ul>
+	   <li><a href="/lau/important-information-on-revisions-to-data-for-model-based-areas-in-2022.htm">Important Information on Revisions to Data for Model-Based Areas in 2022</a></li>
+    <li><a href="/lau/seasonal-adjustment-for-weekly-unemployment-insurance-claims.htm">Seasonal Adjustment for Weekly Unemployment Insurance Claims</a></li>
+    <li><a href="/lau/gen-5-changes-in-2021.htm">Questions and Answers on Changes to Model-Based Estimation</a> </li>
+    <li><a href="/lau/ssachanges2018.htm">Questions and Answers on  Changes to Seasonal Adjustment for Model-Based Estimates in 2018</a></li>
+    <li><a href="/lau/lauschanges2015.htm">Changes to State and Local Area Labor Force Estimation in 2015</a></li>
+    <li><a href="/lau/acsqa.htm">American Community Survey (ACS) Questions and Answers</a></li>
+    <li><a href="/lau/lastderr.htm">Information on Model-Based Error Measures for Regions, Divisions, and States</a></li>
+    <li>Administrative Uses of Local Area Unemployment (<a href="/lau/lauadminuses.pdf">PDF</a>)</li>
+    <li><a href="/lau/laumthd.htm">LAUS Estimation Methodology</a></li>
+    <li>Labor Force Concepts (<a href="/cps/eetech_methods.pdf">PDF</a>)</li>
+    <li><a href="/lau/laugeo.htm">Geographic Concepts</a></li>
+    <li><a href="/lau/lauseas.htm">Seasonal Adjustment</a></li>
+    <li><a href="/lau/lauhvse.htm">Differences Between Data Series</a></li>
+    <li><a href="/lau/censusdiff.htm">Differences Between Decennial Census and LAUS Data</a></li>
+    <li><a href="/lau/laurdqa.htm">Region and Division Labor Force Data FAQs</a></li>
+  </ul>
+</div>
+ 
+<h2 class="content-tab" id="faq"><a><strong>LAU Frequently Asked Questions</strong></a></h2>
+<div class="content-tab-body">
+	<h3>People Are Asking...</h3>
+	<ol>
+		<li><a href="/lau/peoplebox.htm#Q01">Does LAUS have information on labor force participation rates and employment-population ratios</a>?</li>
+		<li><a href="/lau/lauschanges2015.htm">What changes were made to State and local area labor force estimates</a>?</li>
+		<li><a href="/lau/lausmsa.htm">Where can I find information on metropolitan areas, including recent changes</a>?</li>
+		<li><a href="/lau/peoplebox.htm#Q05">What areas have the highest or lowest unemployment rates</a>?</li>
+		<li><a href="/lau/peoplebox.htm#Q06">How can I apply for unemployment insurance</a>?</li>
+		<li><a href="/lau/peoplebox.htm#Q07">Where can I find out if my unemployment insurance benefits will be extended</a>?</li>
+	</ol>
+	<h3>Frequently Asked Questions</h3>
+	<ol>
+		<li><a href="/lau/laufaq.htm#Q01">What kind of information does the Local Area Unemployment Statistics (LAUS) program provide</a>?</li>
+		<li><a href="/lau/laufaq.htm#Q02">For what time periods are data available</a>?</li>
+		<li><a href="/lau/laufaq.htm#Q03">How are the labor force components (i.e., civilian labor force, employed, unemployed, and unemployment rate) defined</a>?</li>
+		<li><a href="/lau/laufaq.htm#Q04">What is the American Community Survey (ACS), and what is the relationship between the LAUS and ACS labor force estimates</a>?</li>
+		<li><a href="/lau/laufaq.htm#Q05">What are metropolitan areas and micropolitan areas</a>?</li>
+		<li><a href="/lau/laufaq.htm#Q06">What are labor market areas (LMAs)</a>?</li>
+		<li><a href="/lau/laufaq.htm#Q07">What is the publication schedule for LAUS program news releases</a>?</li>
+		<li><a href="/lau/laufaq.htm#Q08">Why aren't data for all areas (the nation, states, and substate areas) available at the same time</a>?</li>
+		<li><a href="/lau/laufaq.htm#Q09">Why are labor force estimates for subnational areas different between the LAUS program and the Geographic Profile of Employment and Unemployment (GP)</a>?</li>
+	</ol>
+	<p><a class="green-anchor-button" href="/lau/laufaq.htm">All LAU FAQs &raquo;</a></p>
+</div>
+<p>&nbsp;</p>
+ 
+<h2 class="content-tab" id="notices"><a><strong>LAU Special Notices</strong></a></h2>
+<div class="content-tab-body">
+<ul>
+	<li><a href="/lau/launews1.htm">Important Information</a> on Local Area Unemployment Statistics database series</li>
+</ul>
+</div>
+<p>&nbsp; 
+<h2 class="content-tab" id="links"><a><strong>Related Links</strong></a></h2>
+<div class="content-tab-body">
+<h3>Other BLS Programs</h3>
+<ul>
+	<li><a href="/cps/">Labor Force Statistics from the Current Population Survey</a>&mdash;national data on employment, unemployment, earnings, and other labor market topics by demographic characteristics.</li>
+	<li><a href="/ces/">Employment, Hours, and Earnings from the Current Employment Statistics survey (National)</a>&mdash;monthly national data by detailed industry on employment, hours, and earnings of workers on the payrolls of&nbsp; nonfarm establishments.</li>
+	<li><a href="/sae/">Employment, Hours, and Earnings from the Current Employment Statistics survey (State and Metro Area)</a>&mdash;monthly data on employment, hours, and earnings by industry and geographic area.</li>
+	<li><a href="/cew/">Quarterly Census of Employment and Wages</a>&mdash;comprehensive employment and wage data by industry and geographic area for workers covered by State Unemployment Insurance laws.</li>
+	<li><a href="/jlt/">Job Openings and Labor Turnover Survey (JOLTS)</a>&mdash;monthly data on job openings, hires, and separations that serve as demand-side indicators of labor shortages at the national level.</li>
+	<li><a href="/oes/">Occupational Employment Statistics</a>&mdash;data on employment and wages for over 800 occupations and for about 400 nonfarm industries for the nation, plus occupational data for States and metropolitan areas.</li>
+	<li><a href="/nls/">National Longitudinal Surveys</a>&mdash;several surveys gathering information at multiple points in time about the labor market and life experiences of six groups of American men, women, and youth.</li>
+	<li><a href="/mls/">Mass Layoff Statistics</a>&mdash;reports on mass layoff actions that result in workers being separated from their jobs.</li>
+</ul>
+<h3>Other Useful Links</h3>
+<ul>
+	<li><a href="https://www.careeronestop.org/LocalHelp/UnemploymentBenefits/unemployment-benefits.aspx">Information about Unemployment Insurance</a>&mdash;this Department of Labor site provides links to local One-Stop services</li>
+</ul>
+</div>
+<p>&nbsp; 
+<h2 class="content-tab" id="contact"><a><strong>Contact LAU</strong></a></h2>
+<div class="content-tab-body">
+<h3>Contact</h3>
+<strong>E-mail: </strong><a href="https://data.bls.gov/cgi-bin/forms/lau?/lau/home.htm">Contact LAUS</a><br>
+<strong>Telephone number:</strong>  (202) 691-6392 <p></p>
+<p>
+<a href="/bls/ofolist.htm"> Cooperating State Agencies Contact List </a> </p>
+<p>
+</p>
+<p>&nbsp;</p>
+</div>
+
+
+<!-- ********************************************TRAILER FILES******************************************** -->
+<!-- ThreeColFoot Begin -->
+
+<!--no_index_start-->
+
+<!-- MAIN CONTENT END -->
+
+
+
+<!-- 3COL LAYOUT COL3 BEGIN -->
+
+			<div class="social-media"><div>Recommend this page using:</div>
+	<div><a href="javascript:void(0);" class="share_facebook"><img alt="share on facebook" src="/images/icons/facebook.png"></a><span><a href="javascript:void(0);" class="share_facebook">Facebook</a></span></div>
+	<div><a href="javascript:void(0);" class="share_twitter"><img alt="share on twitter" src="/images/icons/twitter.png"></a><span><a href="javascript:void(0);" class="share_twitter">Twitter</a></span></div>
+	<div><a href="javascript:void(0);" class="share_linkedin"><img alt="share on linkedin" src="/images/icons/linkedin.png"></a><span><a href="javascript:void(0);" class="share_linkedin">LinkedIn</a></span></div>
+	<!--<div><a href="javascript:void(0);" class="share_googleplus"><img src="/images/icons/google.png"></a><span><a href="javascript:void(0);" class="share_googleplus">Google+</a></span></div>-->
+</div>
+			</div>
+		</td>
+		<td id="secondary-content-td">
+			<div class="secondary-content">
+
+
+<!-- 3COL LAYOUT COL3 END -->
+
+
+
+<!-- LATEST NUMBERS BEGIN -->
+
+		<div id="latest-numbers">
+			<h3>Latest Numbers</h3><a href="/feed/lau_latest.rss" id="sidebar-rss-button"><img src="/images/layout/rss.gif" alt="RSS" height="16" width="44" /></a><br>
+			<div class="clearfloat"></div>
+
+									
+														
+																		<h4><a href="/news.release/laus.toc.htm">Unemployment Rates, seasonally adjusted<img src="/images/icons/icon_new_release_small.gif" alt="News Release" /></a></h4>		
+											
+										
+													
+																						<p>
+																																		Alabama<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">2.6%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST010000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted Alabama Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		Alaska<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">4.5%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST020000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted Alaska Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		Arizona<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">3.3%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST040000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted Arizona Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		Arkansas<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">3.3%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST050000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted Arkansas Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		California<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">3.9%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST060000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted California Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		Colorado<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">3.3%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST080000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted Colorado Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		Connecticut<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">3.7%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST090000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted Connecticut Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		Delaware<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">4.4%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST100000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted Delaware Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		D.C.<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">5.2%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST110000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted D.C. Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		Florida<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">2.7%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST120000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted Florida Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		Georgia<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">2.8%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST130000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted Georgia Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		Hawaii<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">4.1%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST150000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted Hawaii Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		Idaho<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">2.6%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST160000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted Idaho Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		Illinois<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">4.4%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST170000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted Illinois Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		Indiana<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">2.6%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST180000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted Indiana Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		Iowa<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">2.5%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST190000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted Iowa Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		Kansas<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">2.4%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST200000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted Kansas Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		Kentucky<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">3.7%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST210000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted Kentucky Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		Louisiana<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">3.6%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST220000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted Louisiana Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		Maine<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">2.8%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST230000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted Maine Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		Maryland<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">3.9%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST240000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted Maryland Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		Massachusetts<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">3.5%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST250000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted Massachusetts Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		Michigan<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">4.2%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST260000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted Michigan Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		Minnesota<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">1.8%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST270000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted Minnesota Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		Mississippi<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">3.6%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST280000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted Mississippi Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		Missouri<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">2.5%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST290000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted Missouri Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		Montana<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">2.7%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST300000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted Montana Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		Nebraska<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">2.0%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST310000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted Nebraska Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		Nevada<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">4.4%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST320000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted Nevada Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		New Hampshire<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">2.0%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST330000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted New Hampshire Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		New Jersey<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">3.7%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST340000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted New Jersey Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		New Mexico<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">4.5%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST350000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted New Mexico Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		New York<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">4.4%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST360000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted New York Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		North Carolina<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">3.4%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST370000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted North Carolina Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		North Dakota<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">2.3%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST380000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted North Dakota Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		Ohio<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">3.9%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST390000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted Ohio Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		Oklahoma<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">3.0%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST400000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted Oklahoma Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		Oregon<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">3.5%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST410000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted Oregon Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		Pennsylvania<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">4.3%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST420000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted Pennsylvania Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		Puerto Rico<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">5.9%   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST720000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted Puerto Rico Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		Rhode Island<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">2.7%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST440000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted Rhode Island Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		South Carolina<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">3.2%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST450000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted South Carolina Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		South Dakota<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">2.3%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST460000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted South Dakota Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		Tennessee<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">3.3%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST470000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted Tennessee Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		Texas<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">4.0%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST480000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted Texas Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		Utah<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">2.0%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST490000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted Utah Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		Vermont<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">2.1%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST500000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted Vermont Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		Virginia<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">2.7%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST510000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted Virginia Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		Washington<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">3.7%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST530000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted Washington Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		West Virginia<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">3.7%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST540000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted West Virginia Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		Wisconsin<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">3.0%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST550000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted Wisconsin Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																																	<p>
+																																		Wyoming<br>
+																									<span title="Unemployment rate, in percent, seasonally adjusted" class="data">3.0%(p)   in Jul 2022</span>
+														
+														
+																													<a href="/pdq/SurveyOutputServlet?data_tool=latest_numbers&amp;series_id=LASST560000000000003" aria-label="Historical Data for Unemployment Rates, seasonally adjusted Wyoming Unemployment rate, in percent, seasonally adjusted"><img src="/images/layout/historical_icon.gif" alt="Historical Data" title="10-years of historical data" /></a></p>
+																				
+		 <div id="sidebar-explainers">
+		 <span><img src="/images/icons/explainers_historical_data.gif" alt="Historical Data" />Historical Data</span>
+		 <span><img src="/images/icons/explainers_news_release.gif" alt="News Release" />News Release</span>
+
+							<span>p - preliminary</span>	
+			
+		 		
+ 		</div>	 
+
+		
+	</div>
+		
+	<!-- ALL VARIABLES
+			Errors: 	Config: 	Data: 	-->
+
+
+
+<!-- LATEST NUMBERS END -->
+
+
+
+<!-- SECONDARY CONTENT BEGIN -->
+
+<h3>Subscribe</h3>
+<p><a href="/bls/list.htm">Subscribe to receive free BLS Economic News Release e-mail</a>.</p>
+<p><a href="/bls/list.htm"><img src="/images/icons/icon_email_subscribe_green.gif" alt="Subscribe to the BLS News Service e-mail" width="80" height="16"></a></p>
+		
+<div id="regional-resources">
+  <h3>Regional Resources</h3>
+  <img src="/images/maps/sml/blue_map.png" width="168" height="101" alt="US Map">
+  
+<form method="get" action="/asp/redirect.asp" >
+	<label for="regionalResources" class="invisible">Select a state</label>
+	<select id="regionalResources" name="target" style="width: 140px; margin:0; padding:0; vertical-align: middle">
+	<option selected>&nbsp;&nbsp;&nbsp;&nbsp;Select a State&nbsp;&nbsp;&nbsp;&nbsp;</option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+01">Alabama </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+02">Alaska </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+04">Arizona </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+05">Arkansas </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+06">California </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+08">Colorado </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+09">Connecticut </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+10">Delaware </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+11">District Of Columbia </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+12">Florida </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+13">Georgia </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+15">Hawaii </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+16">Idaho </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+17">Illinois </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+18">Indiana </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+19">Iowa </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+20">Kansas </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+21">Kentucky </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+22">Louisiana </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+23">Maine </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+24">Maryland </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+25">Massachusetts </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+26">Michigan </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+27">Minnesota </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+28">Mississippi </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+29">Missouri </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+30">Montana </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+31">Nebraska </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+32">Nevada </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+33">New Hampshire </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+34">New Jersey </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+35">New Mexico </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+36">New York </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+37">North Carolina </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+38">North Dakota </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+39">Ohio </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+40">Oklahoma </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+41">Oregon </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+42">Pennsylvania </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+44">Rhode Island </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+45">South Carolina </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+46">South Dakota </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+47">Tennessee </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+48">Texas </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+49">Utah </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+50">Vermont </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+51">Virginia </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+53">Washington </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+54">West Virginia </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+55">Wisconsin </option>
+	<option value="https://data.bls.gov/cgi-bin/surveymost?la+56">Wyoming </option>
+	</select>		  
+	<input id="map" type="submit" value="Go">
+	<label class="invisible" for="map">map:</label>
+</form>
+</div>
+
+<!-- SECONDARY CONTENT END -->
+
+	
+
+<!-- 3COL LAYOUT COL4 BEGIN -->
+
+			</div>
+		</td>
+	</tr>
+</table>
+
+
+<!-- 3COL LAYOUT COL4 END -->
+
+	
+
+
+
+
+<!-- WRAPPER BOTTOM BEGIN -->
+
+
+		
+		
+		</div><!-- close id="wrapper-outer" -->
+	</div><!-- close id="wrapper" -->
+</div><!-- close id="container" -->
+
+	
+
+
+<!-- WRAPPER BOTTOM END -->
+
+
+
+<!-- FOOTER LEFT BEGIN -->
+
+<footer aria-label="global-footer">
+	
+<!-- Footer Nav Menu-->
+<div class="footerNav">
+<ul class="footerNavInner">
+   <li class="footerNavItem"><a href="https://www.bls.gov/">Home</a></li>
+   <li class="footerNavItem"><a href="/bls/proghome.htm">Subjects</a></li>
+   <li class="footerNavItem"><a href="/data/">Data Tools</a></li>
+   <li class="footerNavItem"><a href="/opub/">Publications</a></li>
+   <li class="footerNavItem"><a href="/bls/newsrels.htm">Economic Releases</a></li>
+   <li class="footerNavItem"><a href="/k12/" >Classroom</a></li>
+   <li class="footerNavItem"><a href="https://beta.bls.gov">Beta</a></li>
+</ul>
+</div>
+<!-- Footer Nav Menu-->
+<script>/*<![CDATA[*/(function(){var sz = document.createElement('script'); sz.type = 'text/javascript'; sz.async = true;sz.src = '//siteimproveanalytics.com/js/siteanalyze_6032860.js';var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sz, s);})();/*]]>*/</script> 
+<div id="footer-primary-wrapper">
+<div class="bootstrap standard-width">
+<div id="footer-container" class="row">
+	<div id="footer-links-container" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+	
+	
+<div class="bls-lftside-holder">	
+<div class="bls-logo-footer">
+<img src="/images/bls_emblem_trans.png" class="responsiveImg" alt="U.S. Bureau of Labor Statistics Logo "/><div class="d-none d-md-block clearfloat"><br><br></div>
+
+ </div>
+ <div class="address-contact-footer">
+
+<!-- FOOTER LEFT END -->
+
+
+
+<address class="footer-address"  >  
+<strong  >U.S. Bureau of Labor Statistics</strong>
+<span  >Local Area Unemployment Statistics Information and Analysis</span> 
+<span  >PSB Suite 4675</span> 
+<span  >2 Massachusetts Avenue NE</span>  
+<span  >Washington, DC 20212-0001</span>
+</address>
+
+
+
+<!-- FOOTER CENTER BEGIN -->
+
+
+
+
+
+<!-- FOOTER CENTER END -->
+
+
+
+
+<span class="footer-contact">  
+
+<a href="tel:12026916392" class="number" aria-label="Telephone: 1-202-691-6392">
+<span>Telephone:</span><span> 1-202-691-6392 </span>
+
+</a>
+
+<a href="/lau/home.htm" aria-label="www.bls.gov/LAU" >www.bls.gov/LAU</a>
+<a href="https://data.bls.gov/forms/lau.htm?/lau/home.htm" aria-label="Contact LAUS">Contact LAUS</a>
+
+</span>
+		
+
+
+
+<!-- FOOTER RIGHT BEGIN -->
+
+</div> 
+</div>
+</div>
+
+				<div id="quicklinks" class="row col-xs-12 col-sm-12 col-md-8 col-lg-8">
+					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-5">
+					<strong>resources</strong>
+					<a class="d-sm-none" data-toggle="collapse" href="#quicklinksli5" role="button" aria-expanded="false" aria-controls="quicklinksli5" aria-label="resources Sub Menu"></a>
+						<div class="collapse" id="quicklinksli5">
+							<ul class="d-sm-block">						
+								<li><a href="https://www.oig.dol.gov/" aria-label="Office of Inspector General (OIG) website">Inspector General (OIG)</a></li>
+								<li><a href="/bls/bls_budget_and_performance.htm" aria-label="Budget and Performance">Budget and Performance</a></li>	
+								<li><a href="https://www.dol.gov/grants" aria-label="Department of Labor Grants">Department of Labor Grants</a></li>									
+								<li><a href="/bls/no_fear_act.htm" aria-label="No Fear Act">No Fear Act</a></li>
+								<li><a href="https://www.usa.gov/" aria-label="USA.gov website">USA.gov</a></li>
+								<li><a href="https://www.vote.gov/" aria-label="Register to vote at Vote.gov" title="Public and private decision making about worker rights and benefits depend on you exercising your fundamental right. Register to vote at Vote.gov!">Vote.gov</a></li>						
+							</ul>
+						</div>
+					</div>		
+					<div class="col-xs-6 col-sm-6 col-md-6 col-lg-5">
+					<strong>about the site</strong>
+					<a class="d-sm-none" data-toggle="collapse" href="#quicklinksli6" role="button" aria-expanded="false" aria-controls="quicklinksli6" aria-label="about this site Sub Menu"></a>
+						<div class="collapse" id="quicklinksli6">
+							<ul class="d-sm-block">	
+								<li><a href="/bls/sitemap.htm" aria-label="Sitemap">Sitemap</a></li>						
+								<li><a href="/bls/blsfoia.htm" aria-label="Freedom of Information Act">Freedom of Information Act</a></li>
+								<li><a href="/bls/pss.htm" aria-label="Privacy and Security Statement">Privacy and Security Statement</a></li>
+								<li><a href="/bls/disclaimer.htm" aria-label="Disclaimers">Disclaimers</a></li>
+								<li><a href="/bls/linksite.htm" aria-label="Linking and Copyright Information">Linking and Copyright Info</a></li>	
+								<li><a href="/bls/website-policies.htm" aria-label="Important Website Notices">Important Website Notices</a></li>
+								<li><a href="/help/" aria-label="Help and Tutorials">Help and Tutorials</a></li>
+							</ul>
+						</div>
+					</div>				
+                </div>
+				 
+</div>
+</div>
+</div>
+<div id="footer-secondary-wrapper">
+
+<div class="bootstrap standard-width">
+
+<div>
+<span>Connect With BLS</span>
+  <div class="social-media-icons"> 
+    
+           <a class="social-media-icon" href="http://twitter.com/BLS_gov" title="BLS Twitter" target="_blank" rel="noopener noreferrer" >
+              <!--?xml version="1.0" encoding="utf-8"?-->
+              <svg aria-hidden="true" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
+              <span class="sr-only">Twitter</span>
+          </a>
+                  
+           <a class="social-media-icon" href="https://www.youtube.com/channel/UCijn3WBpHtx4AvSya7NER9Q" title="BLS Youtube" target="_blank" rel="noopener noreferrer" >
+              <!--?xml version="1.0" encoding="utf-8"?-->
+              <svg aria-hidden="true" data-prefix="fab" data-icon="youtube" class="svg-inline--fa fa-youtube fa-w-18"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg>
+              <span class="sr-only">Youtube</span>
+          </a>
+          <a class="social-media-icon" href="javascript:window.open('https://public.govdelivery.com/accounts/USDOLBLS/subscriber/new ','Popup','width=800,height=500,toolbar=no,scrollbars=yes,resizable=yes'); void('');" onclick="window.status='Subscribe'; return true" onmouseover="window.status='Subscribe'; return true" onmouseout="window.status=''; return true" id="email" title="Subscribe to BLS E-mail Updates">
+              <!--?xml version="1.0" encoding="utf-8"?-->
+              <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope" class="svg-inline--fa fa-envelope fa-w-16"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg>
+              <span class="sr-only">Email</span>
+          </a>
+        </div>
+</div>
+</div>
+</div>
+</footer>
+
+<!-- FOOTER RIGHT END -->
+
+<!--no_index_end-->
+
+<!-- ThreeColFoot End -->
+<!-- ***************************************************************************************************** -->
+</body>
+</html>

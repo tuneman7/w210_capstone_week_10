@@ -127,3 +127,18 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+fannie_mae/
+housing_starts/
+zillow/
+trading_economics/
+
+
+
+data_engineering_venv/  
+myproj/
+w210_web/
+lightning_logs/
+optuna_test/
+results_with_models/
+results_with_models_msa/

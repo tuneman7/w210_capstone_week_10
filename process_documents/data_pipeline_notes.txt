@@ -1,0 +1,117 @@
+Date: 10-19-2022
+Author: Don Irwin
+Subject: Data Aggregation / Pipeline Notes:
+
+Hi Blake and Jonathan,
+
+We need to automate our data aggregation pipeline so that our data refreshes can be run end-to-end.
+
+This needs to be reproducible and be able to run on any computer (windows, Mac, linux).
+
+Paths must all be relative and it’s best to use the os.path.join command to build out paths as this will account for the “/“ or “\” differences between windows and MAC.
+
+Eventually this pipeline will be containerized.
+
+There must be some kind of a log file so that it runs once a month say on the 15th, if it’s already run, then it can skip doing its work.
+
+Also, while it is running there should be some kind of control file that indicates that it is running — this is to prevent someone from double running it.
+
+Ideally it transmits an email at its conclusion to let us know that it has run end to end.
+
+My estimate of the time it’s going to take to do this is a good two days worth of work, and then another two days or so of testing.
+
+This is not particularly difficult, but it is tedious work.  However, it’s foundational work as every project we work with is going to rely on data acquisition and preparation.
+
+Some teams are using Apache spark, my sense is this may be over-kill, but whatever you think is best that yields the same result, is reproducible and allows any of us to download the code, execute it and have a fully functional dataset.
+
+Steps:
+
+1. DOWNLOAD RDC HISTORICAL DATA MONTHLY:
+2. DOWNLOAD UNEMPLOYMENT DATA BY COUNTY THROUGH FRED API:
+3. DOWNLOAD 30 YEAR MORTGAGE FROM FRED:
+4. MERGE RDC DATA FILE WITH UNEMPLOYMENT DATA BY COUNTY AND 30 YEAR INTEREST RATES GENERATE LAG FEATURES:
+
+
+
+Steps Detail:
+
+1. DOWNLOAD RDC HISTORICAL DATA MONTHLY:
+
+*******************
+
+Http Location:
+https://econdata.s3-us-west-2.amazonaws.com/Reports/Core/RDC_Inventory_Core_Metrics_County_History.csv
+
+Target Location in Project:
+/w210_sec_008_capstone/data_engineering/datasets/realtor/RDC_Inventory_Core_Metrics_County_History.csv
+
+NOTES:
+When downloading copy old file & rename appropriately, then write new file.
+
+*******************
+
+2. DOWNLOAD UNEMPLOYMENT DATA BY COUNTY THROUGH FRED API:
+
+*******************
+
+Entry Point Program Location:
+
+/w210_sec_008_capstone/data_engineering/. get_fed_unemployment_data.sh 
+
+— Look at this shell file to see what python program it’s calling under the covers. — get_county_unemployment.py
+
+
+Output Target Location in Project:
+
+/w210_sec_008_capstone/data_engineering/datasets/fed/monthly_unemployment_by_county/
+
+NOTES:
+
+When running rename old target directory before download, then run program for clean download — If it sees the file there it won’t attempt to re-run them.
+
+This program takes a while to run, because of the FRED API rate limiting by account and IP.  To test this you can run this in the background while you are working to watch it do its thing — however you must do the folder deletion first.
+
+*******************
+
+3. DOWNLOAD 30 YEAR MORTGAGE FROM FRED:
+
+*******************
+
+http location:
+
+https://fred.stlouisfed.org/series/MORTGAGE30US
+
+
+Output Target Location in Project:
+
+/w210_sec_008_capstone/data_engineering/datasets/fed/MORTGAGE30US.csv
+
+NOTES:
+
+This was downloaded manually.  I would suggest automating it with the FRED API. — This should be very simple to do.
+
+This file can be overwritten each time.
+
+*******************
+
+4. MERGE RDC DATA FILE WITH UNEMPLOYMENT DATA BY COUNTY AND 30 YEAR INTEREST RATES GENERATE LAG FEATURES:
+
+*******************
+
+Entry Point Program:
+
+/w210_sec_008_capstone/data_engineering/data_staging/. merge_rdc_data.sh
+
+— Look at this shell program to see what it is doing under the covers — its python program is:  merge_unemployment_with_rdc_frame.py
+
+Output Target in Project:
+
+/w210_sec_008_capstone/data_engineering/datasets/merged/rdc_data_merged_with_unemployment_and_lagged_interest_rate.csv
+/w210_sec_008_capstone/data_engineering/datasets/merged/rdc_data_not_matched.csv
+/w210_sec_008_capstone/data_engineering/datasets/merged/unique_counties.csv
+
+NOTES: This is in a script form rather than a program file it can be glued together with the other steps through bash.  This is not a super efficient program but it works okay.
+
+*******************
+
+
